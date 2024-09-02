@@ -2,10 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const photos = [
-  { src: 'images/porta.jpg', alt: 'Porta' },
   { src: 'images/giardino.jpg', alt: 'Giardino' },
   { src: 'images/casetta.jpg', alt: 'Casetta' },
-  { src: 'images/vigna.jpg', alt: 'Vigna' }
+  { src: 'images/vigna.jpg', alt: 'Vigna' },
+  { src: 'images/chiesa.jpg', alt: 'Chiesa' },
 
   // Aggiungi altre foto qui
 ];
@@ -13,7 +13,7 @@ const photos = [
 const PhotoGallery = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-feldgrau mb-8 text-center">Galleria di Foto</h2>
+      <h2 className="text-3xl font-bold text-feldgrau mb-8 text-center">Galleria</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {photos.map((photo, index) => (
           <motion.div

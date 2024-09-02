@@ -10,7 +10,7 @@ function ProductCard({ prodotto, onDelete, onAddToCart }) {
       whileHover={{ scale: 1.05 }}
     >
       <div className="p-4 flex-grow flex flex-col">
-        <h3 className="text-2xl font-semibold text-feldgrau mb-2 h-16 overflow-hidden">{prodotto.nome}</h3>
+        <h3 className="text-2xl font-bold text-feldgrau mb-2 h-16 overflow-hidden text-center">{prodotto.nome}</h3>
         <div className="relative h-72 mb-4">
           <img 
             src={prodotto.img} 
@@ -18,12 +18,12 @@ function ProductCard({ prodotto, onDelete, onAddToCart }) {
             className="absolute inset-0 w-full h-full object-cover rounded-lg"
           />
         </div>
-        <p className="text-feldgrau font-bold">{prodotto.prezzo.toFixed(2)} €</p>
+        <p className="text-feldgrau text-center">{prodotto.prezzo.toFixed(2)} €</p>
       </div>
       <div className="p-4 flex justify-center overflow-ellipsis">
         <button 
           onClick={() => onAddToCart(prodotto)}
-          className="bg-green text-beige px-4 py-6 w-96 rounded justify-center flex items-center"
+          className="bg-green font-extrabold text-beige px-4 py-6 w-96 rounded justify-center flex items-center"
         >
         Aggiungi al Carrello 
         </button>

@@ -38,7 +38,7 @@ function Contact() {
             <p className="flex items-center">
               
               <FaPhoneAlt className="mr-2 text-black text-extrabold" />
-              <a href="tel:+393426623721" className="text-black text-semibold hover:underline">
+              <a href="tel:+393341287766" className="text-black text-semibold hover:underline">
                 +39 334 1287766
               </a>
             </p>

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import Prodotti from './pages/Prodotti';
+import Olio from './pages/Olio';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
-import Olio from './pages/Olio';
 import Territorio from './pages/Territorio';
 import Pasta from './pages/Pasta';
+import Farina from './pages/Farina';
 
 function App() {
   const [cart, setCart] = useState([]); // Assicurati che cart sia inizializzato come array
@@ -55,11 +55,11 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/prodotti" element={<Prodotti addToCart={addToCart} />} />
+              <Route path="/olio" element={<Olio addToCart={addToCart} />} />
+              <Route path="/pasta" element={<Pasta addToCart={addToCart} />} />
+              <Route path="/farina" element={<Farina addToCart={addToCart} />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/olio" element={<Olio />} />
-              <Route path="/pasta" element={<Pasta />} />
-              <Route path="/storia" element={<Territorio />} />
+              <Route path="/territorio" element={<Territorio />} />
             </Routes>
           </div>
 

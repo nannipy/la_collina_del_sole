@@ -15,8 +15,8 @@ function CartDrawer({ cart, updateQuantity, removeFromCart, isOpen, toggleCart }
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           className="fixed top-0 right-0 w-80 h-full bg-white shadow-lg z-50 p-4 flex flex-col justify-between"
         >
-          <div>
-            <div className="flex justify-between items-center mb-4">
+          <div className='overflow-y-auto'>
+            <div className="flex justify-between items-center mb-4 ">
               <h2 className="text-2xl font-bold text-feldgrau">Carrello</h2>
               <button onClick={toggleCart} className="text-feldgrau">
                 <FaTimes size={24} />

@@ -1,13 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 
+/* Definisci il font personalizzato */
+@font-face {
+  font-family: 'These';
+  src: url('../public/fonts/theseasons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Applica il font personalizzato a tutto il sito */
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700; /* Imposta il peso del font a bold */
+  font-family: 'These', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F3E9D5;
