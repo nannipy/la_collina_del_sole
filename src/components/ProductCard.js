@@ -1,8 +1,14 @@
 import React from 'react';
 
-function ProductCard({ prodotto, onDelete }) {
+import { motion } from 'framer-motion';
+
+
+function ProductCard({ prodotto, onDelete, onAddToCart }) {
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-sm h-[600px] flex flex-col">
+    <motion.div 
+      className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-sm h-[530px] flex flex-col justify-between"
+      whileHover={{ scale: 1.05 }}
+    >
       <div className="p-4 flex-grow flex flex-col">
         <h3 className="text-2xl font-semibold text-feldgrau mb-2 h-16 overflow-hidden">{prodotto.nome}</h3>
         <div className="relative h-72 mb-4">
@@ -12,18 +18,17 @@ function ProductCard({ prodotto, onDelete }) {
             className="absolute inset-0 w-full h-full object-cover rounded-lg"
           />
         </div>
-        <p className="text-outer-space mb-4 h-24 overflow-y-auto">{prodotto.descrizione}</p>
-        <div className="flex justify-between items-center mt-auto">
-          <p className="text-feldgrau font-bold">{prodotto.prezzo.toFixed(2)} €</p>
-          <button 
-            onClick={onDelete}
-            className="bg-citron hover:bg-feldgrau text-outer-space hover:text-parchment font-bold py-2 px-4 rounded transition-colors"
-          >
-            Rimuovi
-          </button>
-        </div>
+        <p className="text-feldgrau font-bold">{prodotto.prezzo.toFixed(2)} €</p>
       </div>
-    </div>
+      <div className="p-4 flex justify-center overflow-ellipsis">
+        <button 
+          onClick={() => onAddToCart(prodotto)}
+          className="bg-green text-beige px-4 py-6 w-96 rounded justify-center flex items-center"
+        >
+        Aggiungi al Carrello 
+        </button>
+      </div>
+    </motion.div>
   );
 }
 

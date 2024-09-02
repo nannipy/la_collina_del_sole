@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="text-center">
+    <div className="text-center p-16">
       <h1 className="text-4xl font-bold text-black text-extrabold mb-6">Chi siamo</h1>
       <p className="text-xl text-black text-extrabold max-w-2xl mx-auto">
         Siamo un team appassionato dedicato a creare soluzioni innovative e sostenibili. 

@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700; /* Imposta il peso del font a bold */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #F3E9D5;
@@ -21,11 +22,14 @@ code {
   background-color: #434547;
 }
 
-
 .text-beige {
   color: #F3E9D5;
 }
 
 .bg-green {
   background-color: #536452;
+}
+
+.text-green {
+  color: #536452;
 }
