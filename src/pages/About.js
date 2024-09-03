@@ -29,7 +29,7 @@ function About() {
       </section>
 
       {/* La Nostra Storia */}
-      <section className="bg-green text-white py-12">
+      <section className="bg-green text-white py-12 rounded-lg">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 text-center">La Nostra Storia</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center text-xl">
@@ -47,8 +47,7 @@ function About() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/images/ulivi_papa.jpg" alt="I nostri campi" className="rounded-lg shadow-lg" />
-              <img src="/images/papa_vigna.jpg" alt="La nostra produzione" className="rounded-lg shadow-lg" />
+              <img src="/images/papa_cappello.jpg" alt="La nostra produzione" className="rounded-lg shadow-lg" />
               <img src="/images/vendemmia.jpg" alt="La famiglia al lavoro" className="rounded-lg shadow-lg" />
             </div>
           </div>
