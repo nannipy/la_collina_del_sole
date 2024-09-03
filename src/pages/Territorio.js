@@ -30,23 +30,25 @@ function Territorio() {
               <h3 className=" text-2xl font-semibold mb-4">Epoca Preromana e Romana</h3>
 
               
-              <p className="flex-col-2">
+              <p className="flex-col-2 text-lg">
                 Fondata secondo la leggenda nel 1134 a.C., Amelia vanta una storia ricchissima. Le sue mura megalitiche 
                 e i numerosi reperti archeologici testimoniano un passato florido, culminato nell'importante ruolo di 
                 Municipio durante l'epoca romana.
               </p>
-              <img src="/images/germanico2.jpg" alt="germanico" className="  flex w-full object-cover rounded-lg mt-2 mb-4" />
+              <img src="/images/germanico2.jpg" alt="germanico" className="  flex w-full h-80 object-cover rounded-lg mt-2 mb-4" />
 
 
              
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4">Medioevo e Oltre</h3>
-              <p>
+              
+              <p className="text-lg">
                 Dopo la caduta dell'Impero Romano, Amelia passò sotto il controllo di vari regni, diventando un importante 
                 centro strategico conteso tra Longobardi e Bizantini. Nel Medioevo, la città si schierò con il fronte ghibellino, 
                 giocando un ruolo chiave nelle dinamiche politiche dell'epoca.
               </p>
+              <img src="/images/castello_amelia.jpg" alt="castello" className="  flex w-full h-80 object-cover rounded-lg mt-2 mb-4" />
             </div>
           </div>
         </div>

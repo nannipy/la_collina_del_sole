@@ -7,7 +7,7 @@ function Home() {
     <div className="flex flex-col items-center p-5">
       <div className="relative w-full md:h-[500px] mb-8">
         <img 
-          src="images/trattore.jpg"
+          src="images/ulivi_tramonto.jpg"
           alt="Trattore" 
           className="w-full h-full object-cover rounded-lg shadow-lg"
         />

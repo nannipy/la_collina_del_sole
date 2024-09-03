@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+
 
 function CartDrawer({ cart, updateQuantity, removeFromCart, isOpen, toggleCart }) {
   const totalPrice = cart.reduce((total, item) => total + (item.prezzo || 0) * item.quantity, 0);
@@ -65,9 +67,13 @@ function CartDrawer({ cart, updateQuantity, removeFromCart, isOpen, toggleCart }
           {cart.length > 0 && (
             <div className="mt-auto text-center">
               <p className="text-2xl font-bold text-feldgrau mb-4">Totale: {totalPrice.toFixed(2)} €</p>
-              <button className="bg-green text-beige py-3 px-6 rounded text-lg hover:bg-emerald-700 transition-colors">
-                Procedi al Checkout
-              </button>
+              <Link
+          to="/checkout"
+          onClick={toggleCart}
+          className="block w-full bg-green text-white text-center font-bold py-2 px-4 rounded hover:bg-feldgrau transition duration-300"
+        >
+          Procedi al Checkout
+        </Link>
             </div>
           )}
         </motion.div>
