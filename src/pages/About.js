@@ -14,7 +14,7 @@ function About() {
       <section className="relative md:w-[1300px] h-96 mb-12 mx-auto">
         <img src="/images/girasoli.jpg" alt="Famiglia Pernazza" className="w-full h-full object-cover rounded-lg" />
         <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
-          <h1 className="text-5xl font-bold text-white">La Famiglia Pernazza</h1>
+          <h1 className="text-5xl font-bold text-center text-white ">La Famiglia Pernazza</h1>
         </div>
       </section>
 
