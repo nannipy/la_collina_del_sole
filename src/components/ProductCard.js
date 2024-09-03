@@ -1,9 +1,15 @@
-import React from 'react';
-
-import { motion } from 'framer-motion';
-
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 function ProductCard({ prodotto, onDelete, onAddToCart }) {
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const handleAddToCart = () => {
+    setIsAnimating(true);
+    onAddToCart(prodotto);
+    setTimeout(() => setIsAnimating(false), 500); // Resetta l'animazione dopo 500ms
+  };
+
   return (
     <motion.div 
       className="bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-sm h-[530px] flex flex-col justify-between"
@@ -21,12 +27,17 @@ function ProductCard({ prodotto, onDelete, onAddToCart }) {
         <p className="text-feldgrau text-center">{prodotto.prezzo.toFixed(2)} €</p>
       </div>
       <div className="p-4 flex justify-center overflow-ellipsis">
-        <button 
-          onClick={() => onAddToCart(prodotto)}
-          className="bg-green font-extrabold text-beige px-4 py-6 w-96 rounded justify-center flex items-center"
-        >
-        Aggiungi al Carrello 
-        </button>
+        <AnimatePresence>
+          <motion.button 
+            onClick={handleAddToCart}
+            className="bg-green font-extrabold text-beige px-4 py-6 w-96 rounded justify-center flex items-center"
+            whileTap={{ scale: 0.95 }}
+            animate={isAnimating ? { scale: [1, 1.05, 1] } : {}}
+            transition={{ duration: 0.3 }}
+          >
+            {isAnimating ? "Aggiunto!" : "Aggiungi al Carrello"}
+          </motion.button>
+        </AnimatePresence>
       </div>
     </motion.div>
   );
