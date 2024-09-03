@@ -1,14 +1,95 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
-    <div className="text-center p-5">
-      <h1 className="text-4xl font-bold text-black text-extrabold mb-2">Chi siamo</h1>
-      <p className="text-xl text-black text-extrabold max-w-2xl mx-auto">
-        Siamo una famiglia che si diverte a produrre olio, pasta e farina di grano duro antico Timilia.
-      </p>
-      <img src="images/casetta.jpg" alt="Chi siamo" className="w-1/2 mx-auto mt-2 rounded-lg" />
-    </div>
+    <motion.div 
+      className="bg-beige text-feldgrau p-5"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      {/* Hero Section */}
+      <section className="relative md:w-[1300px] h-96 mb-12 mx-auto">
+        <img src="/images/girasoli.jpg" alt="Famiglia Pernazza" className="w-full h-full object-cover rounded-lg" />
+        <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center rounded-lg">
+          <h1 className="text-5xl font-bold text-white">La Famiglia Pernazza</h1>
+        </div>
+      </section>
+
+      {/* Introduzione */}
+      <section className="container mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold mb-6 text-center">Tradizione e Innovazione dal Cuore dell'Umbria</h2>
+        <p className="text-lg mb-8 max-w-3xl mx-auto text-center">
+          La nostra azienda agricola è una vera impresa di famiglia, guidata da generazioni di passione e dedizione alla terra. 
+          Siamo orgogliosi di portare avanti una tradizione che si rinnova ogni giorno, combinando metodi antichi con tecnologie moderne 
+          per offrire prodotti di altissima qualità.
+        </p>
+      </section>
+
+      {/* La Nostra Storia */}
+      <section className="bg-green text-white py-12">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">La Nostra Storia</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center text-xl">
+            <div>
+              <p className="mb-4">
+                A capo c'è mio padre Federico, insieme a mia madre Silvana, che da sempre sono il cuore pulsante della nostra attività. 
+                Con noi ci sono anche mia sorella Giulia e mio fratello Giovanni, che contribuiscono con energia e idee fresche, 
+                mentre io, Giacomo, porto avanti la tradizione con uno sguardo rivolto al futuro.
+              </p>
+              <p>
+                Accanto a noi, ci sono i nostri fidati contadini Mario e Mirko, che conoscono ogni angolo delle nostre terre e 
+                lavorano con la stessa dedizione della famiglia. Non possiamo dimenticare i nostri nonni, Fernanda e Pietro, 
+                che ci hanno trasmesso i valori su cui si basa la nostra azienda, e i nostri zii Giovanna, Fiorenza e Ludovico, 
+                che ci offrono sempre il loro prezioso supporto.
+              </p>
+            </div>
+            <div className="grid grid-cols-2 gap-4">
+              <img src="/images/ulivi_papa.jpg" alt="I nostri campi" className="rounded-lg shadow-lg" />
+              <img src="/images/papa_vigna.jpg" alt="La nostra produzione" className="rounded-lg shadow-lg" />
+              <img src="/images/vendemmia.jpg" alt="La famiglia al lavoro" className="rounded-lg shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Il Nostro Impegno */}
+      <section className="container mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold mb-8 text-center">Il Nostro Impegno</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Sostenibilità</h3>
+            <p>Stiamo sviluppando colture sostenibili e biologiche, per garantire un futuro prospero e sano per la nostra terra.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Innovazione</h3>
+            <p>Combiniamo metodi tradizionali con tecnologie moderne per migliorare costantemente la qualità dei nostri prodotti.</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4">Comunità</h3>
+            <p>Siamo profondamente radicati nella nostra comunità locale e ci impegniamo a contribuire al suo benessere e sviluppo.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-feldgrau text-black py-12 text-center">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-4">Scopri i Nostri Prodotti</h2>
+          <p className="text-lg mb-6">Assapora la tradizione e la qualità dei prodotti della Famiglia Pernazza.</p>
+          <Link
+            to="/prodotti"
+            className="bg-green text-white font-bold py-3 px-6 rounded-lg hover:bg-beige hover:text-feldgrau transition duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Visita il Nostro Shop
+          </Link>
+        </div>
+      </section>
+    </motion.div>
   );
 }
 

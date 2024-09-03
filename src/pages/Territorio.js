@@ -2,12 +2,12 @@ import React from 'react';
 
 function Territorio() {
   return (
-    <div className="bg-beige text-outer-space">
+    <div className="bg-beige text-outer-space p-5">
       {/* Hero Section */}
-      <section className="relative h-96 mb-12">
-        <img src="/images/amelia.jpg" alt="Panorama di Amelia" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
-          <h1 className="text-5xl font-bold text-white">Amelia: Il Nostro Territorio</h1>
+      <section className="relative md:w-[1300px] text-center md:h-[500px] mb-8 mx-auto">
+        <img src="/images/amelia.jpg" alt="Panorama di Amelia" className="w-full h-full object-cover rounded-lg" />
+        <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center rounded-lg">
+          <h1 className="text-5xl font-bold text-white">Il Nostro Territorio:  Amelia </h1>
         </div>
       </section>
 
@@ -77,7 +77,7 @@ function Territorio() {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-green text-white py-12 text-center">
+      <section className="bg-green text-white py-12 text-center rounded-lg">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-4">Vieni a Scoprire Amelia</h2>
           <p className="text-lg mb-6">Immergiti nella storia, assapora i nostri prodotti e vivi un'esperienza indimenticabile.</p>

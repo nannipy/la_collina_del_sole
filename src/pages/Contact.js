@@ -22,8 +22,14 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-black text-extrabold  mb-8 text-center">Contattaci</h1>
+    <div className="max-w-6xl mx-auto px-4 py-2">
+
+      <section className="relative  h-72 mb-12 ">
+        <img src="/images/tramonto3.jpeg" alt="Contattaci" className=" w-full h-full object-cover rounded-lg" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg">
+          <h1 className="text-5xl font-bold text-white">Contattaci</h1>
+        </div>
+      </section>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         <div>
@@ -65,7 +71,7 @@ function Contact() {
 
         <div>
           <h2 className="text-2xl font-semibold text-black mb-4">Inviaci un messaggio</h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 pb-12">
             <div>
               <label htmlFor="nome" className="block text-black mb-1">Nome</label>
               <input

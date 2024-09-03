@@ -8,7 +8,9 @@ import Pasta from './pages/Pasta';
 import Farina from './pages/Farina';
 import Checkout from './pages/Checkout';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
+import Territorio from './pages/Territorio';
 
 function App() {
   const [cart, setCart] = useState([]); // Assicurati che cart sia inizializzato come array
@@ -60,10 +62,11 @@ function App() {
               <Route path="/pasta" element={<Pasta addToCart={addToCart} />} />
               <Route path="/farina" element={<Farina addToCart={addToCart} />} />
               <Route path="/checkout" element={<Checkout cart={cart} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />} />
+              <Route path="/territorio" element={<Territorio />} />
             </Routes>
           </div>
         </div>
-      
+      <Footer />
       <CartDrawer
         cart={cart}
         updateQuantity={updateQuantity}
