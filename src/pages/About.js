@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { FaLeaf, FaLightbulb, FaUsers} from 'react-icons/fa';
+
 
 function About() {
   return (
@@ -47,8 +49,8 @@ function About() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/images/papa_cappello.jpg" alt="La nostra produzione" className="rounded-lg shadow-lg" />
               <img src="/images/vendemmia.jpg" alt="La famiglia al lavoro" className="rounded-lg shadow-lg" />
+              <img src="/images/olive_trattore.jpg" alt="La nostra produzione" className="rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
@@ -59,15 +61,24 @@ function About() {
         <h2 className="text-3xl font-bold mb-8 text-center">Il Nostro Impegno</h2>
         <div className="grid md:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Sostenibilità</h3>
+            <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <FaLeaf className="mr-2 text-green" />
+              Sostenibilità
+            </h3>
             <p>Stiamo sviluppando colture sostenibili e biologiche, per garantire un futuro prospero e sano per la nostra terra.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Innovazione</h3>
+            <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <FaLightbulb className="mr-2 text-yellow-500" />
+              Innovazione
+            </h3>
             <p>Combiniamo metodi tradizionali con tecnologie moderne per migliorare costantemente la qualità dei nostri prodotti.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-4">Comunità</h3>
+            <h3 className="text-xl font-semibold mb-4 flex items-center">
+              <FaUsers className="mr-2 text-blue-500" />
+              Comunità
+            </h3>
             <p>Siamo profondamente radicati nella nostra comunità locale e ci impegniamo a contribuire al suo benessere e sviluppo.</p>
           </div>
         </div>
@@ -84,7 +95,7 @@ function About() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Visita il Nostro Shop
+              Visita il Nostro Shop  
           </Link>
         </div>
       </section>

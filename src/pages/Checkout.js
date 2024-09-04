@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
 
+
+
 function Checkout({ cart, updateQuantity, removeFromCart }) {
   const [formData, setFormData] = useState({
     nome: '',
@@ -13,15 +15,15 @@ function Checkout({ cart, updateQuantity, removeFromCart }) {
     paese: 'Italia',
   });
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Qui puoi aggiungere la logica per processare l'ordine
-    console.log('Ordine inviato:', formData);
-  };
 
   const totale = cart.reduce((acc, item) => acc + item.prezzo * item.quantity, 0);
 
