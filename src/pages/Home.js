@@ -8,7 +8,7 @@ function Home() {
       <div className="relative w-full md:h-[500px] mb-8">
         <img 
           src="images/ulivi_tramonto.jpg"
-          alt="Trattore" 
+          alt="Tramonto" 
           className="w-full h-full object-cover rounded-lg shadow-lg"
         />
       </div>
