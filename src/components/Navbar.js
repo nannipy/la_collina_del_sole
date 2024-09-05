@@ -22,7 +22,7 @@ function Navbar({ cart = [], toggleCart }) {
     <nav className="text-parchment p-4 ">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-3xl ml-0 font-bold hover:text-green transition-colors">
-          <img src="images/logo-4.png" alt="Logo" className="w-auto h-28" />
+          <img src="images/logo-3.png" alt="Logo" className="w-auto h-28" />
         </Link>
         <div className="md:hidden">
           <button onClick={toggleMobileMenu} className="text-parchment focus:outline-none">
