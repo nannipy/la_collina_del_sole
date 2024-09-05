@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const photos = [
-  { src: 'images/tramonto2.jpg', alt: 'Giardino' },
-  { src: 'images/ulivi_papa.jpg', alt: 'Casetta' },
+  { src: 'images/tramontocampo.jpg', alt: 'tramontocampo' },
+  { src: 'images/ulivipapa.jpg', alt: 'ulivi papa' },
   { src: 'images/vigna_sett.jpg', alt: 'Vigna' },
   { src: 'images/fornole.jpg', alt: 'Chiesa' },
   
