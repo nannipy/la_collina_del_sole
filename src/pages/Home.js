@@ -14,7 +14,7 @@ function Home() {
       </div>
       <div className="max-w-4xl text-center mb-8">
         
-        <Link to="/prodotti" className="inline-block font-extrabold text-xl bg-green text-beige py-3 px-6 rounded hover:text-beige transition-colors">
+        <Link to="/products" className="inline-block font-extrabold text-xl bg-green text-beige py-3 px-6 rounded hover:text-beige transition-colors">
           SCOPRI I NOSTRI PRODOTTI →
         </Link>
       </div>

@@ -11,6 +11,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
 import Territorio from './pages/Territorio';
+import Products from './pages/Products';
 
 function App() {
   const [cart, setCart] = useState([]); // Assicurati che cart sia inizializzato come array
@@ -63,6 +64,7 @@ function App() {
               <Route path="/farina" element={<Farina addToCart={addToCart} />} />
               <Route path="/checkout" element={<Checkout cart={cart} updateQuantity={updateQuantity} removeFromCart={removeFromCart} />} />
               <Route path="/territorio" element={<Territorio />} />
+              <Route path="/products" element={<Products />} />
             </Routes>
           </div>
         </div>

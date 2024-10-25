@@ -39,9 +39,9 @@ function Navbar({ cart = [], toggleCart }) {
         </div>
         <ul className="hidden md:flex space-x-6 items-center">
           <li className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <button className="hover:text-white transition-colors dropdown">
+            <Link to="/products" className="hover:text-white transition-colors dropdown">
               Prodotti
-            </button>
+            </Link>
             <AnimatePresence>
               {isDropdownOpen && (
                 <motion.ul
