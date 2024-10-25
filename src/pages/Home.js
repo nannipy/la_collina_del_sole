@@ -4,7 +4,7 @@ import PhotoGallery from '../components/PhotoGallery';
 
 function Home() {
   return (
-    <div className="flex flex-col items-center p-5">
+    <main className="flex flex-col items-center p-5">
       <div className="relative w-full md:h-[500px] mb-8">
         <img 
           src="images/ulivitramonto.jpg"
@@ -20,7 +20,8 @@ function Home() {
       </div>
      
       <PhotoGallery /> {/* Aggiungi la galleria di foto qui */}
-    </div>
+    </main>
+    
   );
 }
 
