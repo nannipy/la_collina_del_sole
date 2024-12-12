@@ -68,7 +68,7 @@ function App() {
             </Routes>
           </div>
         </div>
-      <Footer />
+      <Footer className="bottom-0" />
       <CartDrawer
         cart={cart}
         updateQuantity={updateQuantity}
