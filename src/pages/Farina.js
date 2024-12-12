@@ -48,7 +48,7 @@ function Farina({ addToCart }) {
             </p>
           </div>
           <div className="order-1 md:order-2 h-96">
-            <img src="/images/campo2.jpg" alt="Farina di grano Timilia" className="rounded-lg shadow-lg w-full h-full object-cover" />
+            <img src="/images/campo.jpg" alt="Farina di grano Timilia" className="rounded-lg shadow-lg w-full h-full object-cover" />
           </div>
         </div>
       </div>
