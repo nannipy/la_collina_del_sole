@@ -37,8 +37,8 @@ function Contact() {
           <div className="space-y-4">
             <p className="flex items-center">
               <FaEnvelope className="text-black text-semibold mr-2" />
-              <a href="mailto:lacollinadelsole@gmail.com" className="text-black text-semibold hover:underline">
-                lacollinadelsole@gmail.com
+              <a href="mailto:agricolapernazza@gmail.com" className="text-black text-semibold hover:underline">
+                agricolapernazza@gmail.com
               </a>
             </p>
             <p className="flex items-center">
