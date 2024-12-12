@@ -31,8 +31,35 @@ function Olio({ addToCart }) {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 ">
       <h1 className="text-4xl font-bold text-feldgrau mb-8">Il Nostro Olio</h1>
+      
+      <div className="mb-16 bg-sage-50 rounded-2xl p-8 shadow-sm bg-white ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div className="order-2 md:order-1">
+            <h2 className="text-2xl font-semibold text-feldgrau mb-6">L'Oro Verde dell'Umbria</h2>
+            <p className="mb-4 text-lg text-gray-700">
+              Il nostro olio extravergine d'oliva è prodotto con passione e dedizione nelle colline di Amelia, nel cuore verde dell'Umbria. 
+              Ottenuto esclusivamente attraverso processi meccanici a freddo, questo metodo di estrazione preserva tutte le preziose 
+              caratteristiche organolettiche e i benefici nutrizionali delle olive.
+            </p>
+            <p className="mb-4 text-lg text-gray-700">
+              La spremitura a freddo, effettuata a temperature inferiori a 27°C, garantisce un olio di altissima qualità, 
+              caratterizzato da un gusto equilibrato, con note fruttate e un retrogusto leggermente piccante, 
+              tipico degli oli umbri di alta qualità.
+            </p>
+          </div>
+          <div className="order-1 md:order-2 h-96 ">
+            <img 
+              src="/images/olio-hero.jpg" 
+              alt="Produzione olio d'oliva ad Amelia" 
+              className="rounded-2xl shadow-md w-auto h-full object-cover mx-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      <h2 className="text-2xl font-semibold text-feldgrau mb-6">I Nostri Prodotti</h2>
       
       {showForm && <ProductForm onSubmit={aggiungiProdotto} onCancel={() => setShowForm(false)} />}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

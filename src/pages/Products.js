@@ -15,7 +15,7 @@ function Products() {
       {products.map((product, index) => (
           <motion.div
             key={index}
-            className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl"
+            className="overflow-hidden rounded-2xl shadow-lg hover:shadow-xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.9 }}
             transition={{ type: 'spring', stiffness: 300, damping: 20 }}
