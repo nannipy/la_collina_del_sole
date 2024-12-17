@@ -22,7 +22,7 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-2">
+    <main className="max-w-6xl mx-auto px-4 py-2">
 
       <section className="relative  h-72 mb-12 ">
         <img src="/images/tramonto3.jpeg" alt="Contattaci" className=" w-full h-full object-cover rounded-lg" />
@@ -117,7 +117,7 @@ function Contact() {
           </form>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

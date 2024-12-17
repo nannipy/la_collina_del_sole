@@ -9,7 +9,7 @@ const products = [
 function Products() {
  
   return (
-    <div className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8">
       <h1 className="text-4xl font-bold text-black mb-8">I nostri prodotti</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {products.map((product, index) => (
@@ -33,7 +33,7 @@ function Products() {
       
 
       </div>
-    </div>
+    </main>
   );
 }
 

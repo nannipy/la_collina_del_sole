@@ -28,13 +28,13 @@ function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold text-beige">Seguici</h4>
             <a 
-              href="https://instagram.com/laagricolapernazza" 
+              href="https://instagram.com/agricolapernazza" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="flex items-center text-beige hover:text-beige transition-colors"
             >
               <FaInstagram className="mr-2" />
-              @laagricolapernazza
+              @agricolapernazza
             </a>
           </div>
         </div>

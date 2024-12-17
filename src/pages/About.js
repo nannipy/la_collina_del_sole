@@ -6,6 +6,7 @@ import { FaLeaf, FaLightbulb, FaUsers} from 'react-icons/fa';
 
 function About() {
   return (
+    <main>
     <motion.div 
       className="bg-beige text-feldgrau p-5"
       initial={{ opacity: 0 }}
@@ -100,6 +101,7 @@ function About() {
         </div>
       </section>
     </motion.div>
+    </main>
   );
 }
 

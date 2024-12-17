@@ -31,7 +31,7 @@ function Olio({ addToCart }) {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 ">
+    <main className="container mx-auto px-4 py-8 ">
       <h1 className="text-4xl font-bold text-feldgrau mb-8">Il Nostro Olio</h1>
       
       <div className="mb-16 bg-sage-50 rounded-2xl p-8 shadow-sm bg-white ">
@@ -72,7 +72,7 @@ function Olio({ addToCart }) {
         ))}
       </div>
       
-    </div>
+    </main>
   );
 }
 
